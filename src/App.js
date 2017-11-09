@@ -13,7 +13,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    axios.get('https://mern-crud-book-app.herokuapp.com/api/book')
+    axios.get('/api/book')
       .then(res => {
         this.setState({ books: res.data });
         console.log(this.state.books);
